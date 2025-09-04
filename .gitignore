@@ -1,28 +1,21 @@
-cowrie.cfg
-cowrie.pid
-etc/ssh_host_dsa_key
-etc/ssh_host_dsa_key.pub
-etc/ssh_host_rsa_key
-etc/ssh_host_rsa_key.pub
-var/log/cowrie/*
-*.egg-info
-dl/
-dist/
-docs/_build
-build/
-log/
-.eggs/
-.envrc
-.direnv/
-.pyre/
-.pytype/
+# Python
 __pycache__/
-*.py[cod]
-*env/
-src/twisted/plugins/dropin.cache
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+
+# Virtual Environment
+cowrie-env/
+venv/
+.env/
+
+# Logs and honeypot data
+var/log/*
+var/run/*
+honeyfs/*
+
+# OS files
 .DS_Store
-_trial_temp
-.project
-.pydevproject
-.idea/
-.tox
+*.swp
+
